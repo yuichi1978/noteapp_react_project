@@ -1,0 +1,90 @@
+button {
+  background: none;
+  border: none;
+  color: #08c;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 690px) {
+  button {
+    font-size: 17px;
+  }
+}
+
+.app-sidebar {
+  width: 42%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+}
+
+@media screen and (min-width: 480px) {
+  .app-sidebar {
+    width: 35%;
+  }
+}
+
+.app-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5px;
+}
+
+.app-sidebar-header > h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media screen and (min-width: 690px) {
+  .app-sidebar-header > h1 {
+    font-size: 29px;
+    margin: 0;
+  }
+}
+
+.app-sidebar-notes {
+  height: calc(100vh - 78px);
+  overflow-y: scroll;
+}
+
+.app-sidebar-note {
+  padding: 20px 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sidebar-note-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 690px) {
+  .sidebar-note-title strong {
+    font-size: 23px;
+  }
+}
+
+.app-sidebar-note p {
+  margin: 10px 0;
+  font-size: 12px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (min-width: 690px) {
+  .app-sidebar-note p {
+    font-size: 15px;
+  }
+}
+
+.app-sidebar-note > small {
+  color: #999;
+}
+
+.app-sidebar-note:hover {
+  background-color: #7defab;
+}
+
+.app-sidebar-note.active {
+  background-color: #7defab;
+}
