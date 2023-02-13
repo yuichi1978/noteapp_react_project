@@ -14,7 +14,7 @@
 
 .app-main-note-edit input, textarea {
   display: block;
-  border: 1px solid #ddd;
+  border: 1px solid hsl(0, 0%, 87%);
   margin-bottom: 20px;
   width: 100%;
   height: calc(50vh - 130px);
@@ -46,9 +46,15 @@
 
 .no-active-note {
   width: 70%;
-  height: 100vh;
-  line-height: 100vh;
-  text-align: center;
-  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
   color: #999;
+}
+
+@media screen and (min-width: 690px) {
+  .no-active-note {
+    font-size: 2em;
+  }
 }
